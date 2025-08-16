@@ -1,0 +1,224 @@
+:host {
+  --grey-light: #666;
+}
+
+.general-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color: white;
+  z-index: 1000;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.div-sections-buttons {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--grey-light);
+  font-family: 'Lufga', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  flex-shrink: 0;
+  border: none;
+  background-color: none;
+  background: none;
+}
+
+.buttons:hover {
+  color: black;
+  transition-duration: 0.3s;
+}
+
+.bar {
+  color: var(--grey-light);
+  font-family: 'Lufga', sans-serif;
+}
+
+.div-login-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 8px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 30px;
+  background-color: black;
+  cursor: pointer;
+  font-family: 'Lufga', sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.login-button:hover {
+  background-color: white;
+  color: black;
+  transition-duration: 0.3s;
+}
+
+.login-button:hover .login-logo {
+  fill: black;
+}
+
+.login-logo {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(1px, 1px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(9px, -9px);
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  z-index: 999;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.mobile-buttons {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  color: var(--grey-light);
+  font-family: 'Lufga', sans-serif;
+  font-size: 18px;
+  padding: 1rem 0;
+}
+
+.mobile-buttons:hover {
+  color: black;
+}
+
+.mobile-login-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 12px 30px;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-family: 'Lufga', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.mobile-login-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.mobile-login-button:hover .login-logo {
+  fill: white;
+}
+
+.menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  .logo {
+    width: 120px;
+  }
+
+  .general-div {
+    padding: 0 1rem;
+    gap: 0.5rem;
+  }
+
+  .div-sections-buttons,
+  .div-login-button {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

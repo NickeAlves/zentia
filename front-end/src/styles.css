@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Lufga';
+  src: url('/fonts/LufgaRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-small: 14px;
+  --font-medium: 16px;
+  --white-logo-color: #fafafb;
+  --green-pattern-word: #48ca5e;
+  --grey-light: #6e6e6e;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  font-size: var(--font-medium);
+  font-family: 'Lufga', sans-serif;
+}
+
+@media (max-width: 767.98px) {
+  body {
+    font-size: var(--font-small);
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: var(--font-medium);
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: var(--font-medium);
+  }
+}
