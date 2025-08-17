@@ -12,15 +12,30 @@
   --white-logo-color: #fafafb;
   --green-pattern-word: #48ca5e;
   --grey-light: #6e6e6e;
+  --red-strong: #de2500;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  background-color: white;
   font-size: var(--font-medium);
   font-family: 'Lufga', sans-serif;
+  background: linear-gradient(-45deg, #48ca5e, #ffffff, #48ca5e);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media (max-width: 767.98px) {

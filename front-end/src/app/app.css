@@ -13,10 +13,65 @@ main {
   margin-top: 80px;
 }
 
+@media (max-width: 767px) {
+  .fade-in-section {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 :root {
   --grey-light: #666;
 }
 
 router-outlet + * {
   min-height: calc(100vh - 80px);
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.div-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 0 4rem;
+  padding-top: 2rem;
+}
+
+.h1-app {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 1.2;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #111;
+}
+
+.strong-green-h1-app {
+  color: var(--green-pattern-word);
+}
+
+.strong-zen {
+  color: #000000;
+}
+
+.h3-app {
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: 200;
+  max-width: 700px;
+  line-height: 1.6;
+  color: var(--grey-light);
+  text-align: center;
 }
