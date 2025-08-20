@@ -22,6 +22,11 @@
   width: 200px;
   height: auto;
   flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .div-sections-buttons {
@@ -43,10 +48,13 @@
   border: none;
   background-color: none;
   background: none;
+  transition: box-shadow 0.3s ease;
 }
 
 .buttons:hover {
   color: var(--green-pattern-word);
+  transition: 0.3s;
+  transform: translateY(-2px);
   transition-duration: 0.3s;
 }
 
@@ -82,6 +90,7 @@
   background-color: black;
   color: white;
   transition-duration: 0.3s;
+  transform: translateY(-2px);
 }
 
 .login-button:hover .login-logo {
