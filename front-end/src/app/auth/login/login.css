@@ -108,3 +108,15 @@
 .form-login-button:hover .login-logo {
   fill: white;
 }
+
+.navigate-to-register-button {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.navigate-to-register-button:hover {
+  color: var(--green-pattern-word);
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
