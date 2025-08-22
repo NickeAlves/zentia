@@ -10,7 +10,11 @@ import { Router } from '@angular/router';
 export class Login {
   constructor(private router: Router) {}
 
-  navigateToRegister(): void {
-    this.router.navigate(['/auth/register']);
+  navigateToRegister() {
+    this.router.navigate(['auth/register']);
+  }
+
+  navigateToHome() {
+    this.router.navigate(['/']);
   }
 }

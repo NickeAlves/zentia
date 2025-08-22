@@ -27,26 +27,27 @@
   transform: scale(1.05);
 }
 
-.form-login {
+.form-register {
   display: flex;
   flex-direction: column;
+  background-color: var(--green-pattern-word);
   gap: 1rem;
   justify-content: center;
   align-items: stretch;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.08);
-  padding: 2rem 2.5rem;
+  padding: 2rem 4rem;
   border-radius: 1rem;
-  color: var(--grey-light);
+  color: black;
   width: 100%;
   max-width: 350px;
   transition: box-shadow 0.3s ease;
 }
 
-.form-login:hover {
+.form-register:hover {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-.form-login-input {
+.form-register-input {
   padding: 0.5rem 0.5rem;
   border: 1px solid var(--grey-light);
   border-radius: 10px;
@@ -57,25 +58,25 @@
   transition: all 0.3s ease;
 }
 
-.form-login-input:focus {
+.form-register-input:focus {
   border-color: var(--green-pattern-word);
   box-shadow: 0 0 8px rgba(0, 128, 0, 0.2);
 }
 
-.form-login-labels {
+.form-register-labels {
   text-align: left;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--grey-light);
+  color: black;
 }
 
-.form-login-button {
+.form-register-button {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.6rem;
 
-  background-color: var(--green-pattern-word);
+  background-color: black;
   color: white;
   font-family: 'Lufga', sans-serif;
   font-weight: 600;
@@ -91,13 +92,13 @@
   transition: all 0.3s ease;
 }
 
-.form-login-button:hover {
+.form-register-button:hover {
   background-color: black;
   color: white;
   transform: translateY(-2px);
 }
 
-.login-logo {
+.register-logo {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
@@ -105,18 +106,19 @@
   transition: fill 0.3s ease;
 }
 
-.form-login-button:hover .login-logo {
+.form-register-button:hover .register-logo {
   fill: white;
 }
 
-.navigate-to-register-button {
+.navigate-to-login-button {
   border: none;
   background-color: transparent;
   text-decoration: underline;
+  color: black;
 }
 
-.navigate-to-register-button:hover {
-  color: var(--green-pattern-word);
+.navigate-to-login-button:hover {
+  color: white;
   transition-duration: 0.3s;
   cursor: pointer;
 }

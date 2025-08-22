@@ -13,4 +13,8 @@ export class Register {
   navigateToLogin(): void {
     this.router.navigate(['/auth/login']);
   }
+
+  navigateToHome() {
+    this.router.navigate(['/']);
+  }
 }

@@ -21,7 +21,7 @@ export class Navbar {
   }
 
   navigateToLogin(): void {
-    this.router.navigate(['/auth/login']);
+    this.router.navigate(['auth/login']);
     this.closeMobileMenu();
   }
 

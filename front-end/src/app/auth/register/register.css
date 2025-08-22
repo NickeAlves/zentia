@@ -30,13 +30,14 @@
 .form-register {
   display: flex;
   flex-direction: column;
+  background-color: var(--green-pattern-word);
   gap: 1rem;
   justify-content: center;
   align-items: stretch;
   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.08);
-  padding: 2rem 2.5rem;
+  padding: 2rem 4rem;
   border-radius: 1rem;
-  color: var(--grey-light);
+  color: black;
   width: 100%;
   max-width: 350px;
   transition: box-shadow 0.3s ease;
@@ -66,7 +67,7 @@
   text-align: left;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--grey-light);
+  color: black;
 }
 
 .form-register-button {
@@ -75,7 +76,7 @@
   align-items: center;
   gap: 0.6rem;
 
-  background-color: var(--green-pattern-word);
+  background-color: black;
   color: white;
   font-family: 'Lufga', sans-serif;
   font-weight: 600;
@@ -113,10 +114,11 @@
   border: none;
   background-color: transparent;
   text-decoration: underline;
+  color: black;
 }
 
 .navigate-to-login-button:hover {
-  color: var(--green-pattern-word);
+  color: white;
   transition-duration: 0.3s;
   cursor: pointer;
 }

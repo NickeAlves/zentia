@@ -43,7 +43,7 @@ router-outlet + * {
 }
 
 .fade-in-section {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(40px);
   filter: blur(6px);
   transition: opacity 0.9s ease, transform 0.9s ease, filter 1s ease;
